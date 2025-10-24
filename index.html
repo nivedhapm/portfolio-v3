@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Nivedha P M — Portfolio</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Blinker:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- External CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- GSAP + ScrollTrigger + Lenis -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/@studio-freight/lenis@1.0.27/dist/lenis.min.js"></script>
+  </head>
+  <body>
+
+    <!-- DIV-1: Left Panel -->
+    <aside class="left-panel" role="complementary">
+      <!-- Top section: Logo, Name, Role, Tagline -->
+      <div class="top-section">
+        <div class="logo">
+          <img src="assets/images/logo.png" alt="Nivedha P M Logo">
+        </div>
+        <div class="brand">NIVEDHA P M</div>
+        <div class="role">Software Developer</div>
+        <div class="tagline">I learn, experiment, and build web applications along the way.</div>
+      </div>
+      
+      <!-- Middle section: Navigation -->
+      <nav class="nav-links" id="nav">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <!-- Bottom section: Social media icons -->
+      <div class="socials" aria-label="social links">
+        <a href="#" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="#" title="Github"><i class="fa-brands fa-github"></i></a>
+        <a href="#" title="Email"><i class="fa-solid fa-envelope"></i></a>
+        
+      </div>
+    </aside>
+
+    <!-- Right Panel -->
+    <main class="right-panel">
+      <!-- Landing/Home section - empty by default -->
+      <section id="home" class="landing-section">
+        <!-- Empty landing area - just shows the background -->
+      </section>
+
+      <section id="about">
+        <!-- DIV-2: About content area -->
+        <div class="about-content">
+          <h1>About Me</h1>
+          <p>I'm a developer passionate about crafting accessible, pixel-perfect user interfaces that blend thoughtful design with robust engineering. My favorite work lies at the intersection of design and development, creating experiences that not only look great but are meticulously built for performance and usability.</p>
+          <p>Currently, I'm a Senior Front-End Engineer at Klaviyo, specializing in accessibility. I contribute to the creation and maintenance of UI components that power Klaviyo's frontend, ensuring our platform meets web accessibility standards and best practices to deliver an inclusive user experience.</p>
+        </div>
+
+        <!-- DIV-4: Certifications sidebar -->
+        <div class="cert-sidebar">
+          <div class="cert-track" id="certTrack">
+            <div class="cert"><img src="assets/images/certifications/A1.jpg" alt="Certification 1"></div>
+            <div class="cert"><img src="assets/images/certifications/A2.jpg" alt="Certification 2"></div>
+            <div class="cert"><img src="assets/images/certifications/A3.jpg" alt="Certification 3"></div>
+            <div class="cert"><img src="assets/images/certifications/A4.jpg" alt="Certification 4"></div>
+            <div class="cert"><img src="assets/images/certifications/A5.jpg" alt="Certification 5"></div>
+            <div class="cert"><img src="assets/images/certifications/A6.jpg" alt="Certification 6"></div>
+            <div class="cert"><img src="assets/images/certifications/A7.jpg" alt="Certification 7"></div>
+            <!-- Repeat for seamless scroll -->
+            <div class="cert"><img src="assets/images/certifications/A1.jpg" alt="Certification 1"></div>
+            <div class="cert"><img src="assets/images/certifications/A2.jpg" alt="Certification 2"></div>
+            <div class="cert"><img src="assets/images/certifications/A3.jpg" alt="Certification 3"></div>
+          </div>
+        </div>
+
+        <!-- DIV-3: Skills marquee at bottom -->
+        <div class="skills-bottom">
+          <div class="skills-track" id="skillsTrack">
+            <span class="skill">JAVA</span>
+            <span class="skill">HTML</span>
+            <span class="skill">CSS</span>
+            <span class="skill">JAVASCRIPT</span>
+            <span class="skill">REACT JS</span>
+            <span class="skill">SPRINGBOOT</span>
+            <span class="skill">SQL</span>
+            <span class="skill">REST API</span>
+            <span class="skill">POSTMAN</span>
+            <span class="skill">CLOUD TECHNOLOGIES</span>
+            <!-- Repeat for seamless scroll -->
+            <span class="skill">JAVA</span>
+            <span class="skill">HTML</span>
+            <span class="skill">CSS</span>
+            <span class="skill">JAVASCRIPT</span>
+            <span class="skill">REACT JS</span>
+            <span class="skill">SPRINGBOOT</span>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects">
+        <h2>Selected Projects</h2>
+        <p>A few things I've built recently — click to explore.</p>
+        <div class="projects-grid">
+          <div class="project-card">
+            <video autoplay muted loop>
+              <source src="assets/images/projects/P1.mp4" type="video/mp4">
+            </video>
+            <div class="project-content">
+              <h3>Project Title 1</h3>
+              <p>Project description will be added here...</p>
+            </div>
+          </div>
+          <div class="project-card">
+            <video autoplay muted loop>
+              <source src="assets/images/projects/P2.mp4" type="video/mp4">
+            </video>
+            <div class="project-content">
+              <h3>Project Title 2</h3>
+              <p>Project description will be added here...</p>
+            </div>
+          </div>
+          <div class="project-card">
+            <video autoplay muted loop>
+              <source src="assets/images/projects/P3.mp4" type="video/mp4">
+            </video>
+            <div class="project-content">
+              <h3>Project Title 3</h3>
+              <p>Project description will be added here...</p>
+            </div>
+          </div>
+          <div class="project-card">
+            <video autoplay muted loop>
+              <source src="assets/images/projects/P4.mp4" type="video/mp4">
+            </video>
+            <div class="project-content">
+              <h3>Project Title 4</h3>
+              <p>Project description will be added here...</p>
+            </div>
+          </div>
+          <div class="project-card">
+            <video autoplay muted loop>
+              <source src="assets/images/projects/P5.mp4" type="video/mp4">
+            </video>
+            <div class="project-content">
+              <h3>Project Title 5</h3>
+              <p>Project description will be added here...</p>
+            </div>
+          </div>
+          <div class="project-card">
+            <video autoplay muted loop>
+              <source src="assets/images/projects/P6.mp4" type="video/mp4">
+            </video>
+            <div class="project-content">
+              <h3>Project Title 6</h3>
+              <p>Project description will be added here...</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact">
+        <h2>Get In Touch</h2>
+        <p>Looking for collaboration or full-time roles. Let's connect and create something amazing together.</p>
+        <div class="contact-form">
+          <form onsubmit="event.preventDefault();alert('Thanks! I will get back to you.');">
+            <label>Name</label>
+            <input type="text" required>
+            <label>Email</label>
+            <input type="email" required>
+            <label>Message</label>
+            <textarea required placeholder="Tell me about your project or opportunity..."></textarea>
+            <div class="form-buttons">
+              <button type="submit" class="btn-primary">Send Message</button>
+              <button type="reset" class="btn-secondary">Reset</button>
+            </div>
+          </form>
+        </div>
+        <a href="assets/Resume_Nivedha P M(Updated).pdf" class="resume-link" target="_blank">
+          <i class="fa-solid fa-arrow-up-right-from-square"></i>
+          Download my Resume
+        </a>
+      </section>
+    </main>
+
+    <!-- Cursor Effects -->
+    <div class="cursor-glow"></div>
+
+    <!-- External JavaScript -->
+    <script src="script.js"></script>
+  </body>
+</html>
