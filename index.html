@@ -8,6 +8,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Blinker:wght@300;400;600;700&display=swap" rel="stylesheet">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- DevIcon for skill logos -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    <!-- Hover.css for hover effects -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css">
+    <!-- Magic.css for animation effects -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/miniMAC/magic/magic.min.css">
+    <!-- AOS - Animate on Scroll -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
     <!-- External CSS -->
     <link rel="stylesheet" href="styles.css">
     <!-- GSAP + ScrollTrigger + Lenis -->
@@ -57,51 +65,173 @@
         <div class="about-content">
           <h1>About Me</h1>
           <p>I'm a developer passionate about crafting accessible, pixel-perfect user interfaces that blend thoughtful design with robust engineering. My favorite work lies at the intersection of design and development, creating experiences that not only look great but are meticulously built for performance and usability.</p>
+          
+          
           <p>Currently, I'm a Senior Front-End Engineer at Klaviyo, specializing in accessibility. I contribute to the creation and maintenance of UI components that power Klaviyo's frontend, ensuring our platform meets web accessibility standards and best practices to deliver an inclusive user experience.</p>
         </div>
 
         <!-- DIV-4: Certifications sidebar -->
         <div class="cert-sidebar">
           <div class="cert-track" id="certTrack">
-            <div class="cert"><img src="assets/images/certifications/A1.jpg" alt="Certification 1"></div>
-            <div class="cert"><img src="assets/images/certifications/A2.jpg" alt="Certification 2"></div>
-            <div class="cert"><img src="assets/images/certifications/A3.jpg" alt="Certification 3"></div>
-            <div class="cert"><img src="assets/images/certifications/A4.jpg" alt="Certification 4"></div>
-            <div class="cert"><img src="assets/images/certifications/A5.jpg" alt="Certification 5"></div>
-            <div class="cert"><img src="assets/images/certifications/A6.jpg" alt="Certification 6"></div>
-            <div class="cert"><img src="assets/images/certifications/A7.jpg" alt="Certification 7"></div>
+            <div class="cert" onclick="openCertificate('assets/images/certifications/A1.jpg', 'AWS Cloud Practitioner', 'Achieved AWS Cloud Practitioner certification in 2023. This certification validated my foundational knowledge of AWS services and cloud concepts.')">
+              <img src="assets/images/certifications/A1.jpg" alt="Certification 1">
+            </div>
+            <div class="cert" onclick="openCertificate('assets/images/certifications/A2.jpg', 'Google Cloud Associate', 'Completed Google Cloud Associate certification focusing on cloud architecture and deployment strategies.')">
+              <img src="assets/images/certifications/A2.jpg" alt="Certification 2">
+            </div>
+            <div class="cert" onclick="openCertificate('assets/images/certifications/A3.jpg', 'React.js Developer', 'Advanced React.js certification covering hooks, context, and modern React patterns for building scalable applications.')">
+              <img src="assets/images/certifications/A3.jpg" alt="Certification 3">
+            </div>
+            <div class="cert" onclick="openCertificate('assets/images/certifications/A4.jpg', 'Full Stack Development', 'Comprehensive full-stack development certification covering both frontend and backend technologies.')">
+              <img src="assets/images/certifications/A4.jpg" alt="Certification 4">
+            </div>
+            <div class="cert" onclick="openCertificate('assets/images/certifications/A5.jpg', 'JavaScript ES6+', 'Modern JavaScript certification focusing on ES6+ features, async programming, and advanced concepts.')">
+              <img src="assets/images/certifications/A5.jpg" alt="Certification 5">
+            </div>
+            <div class="cert" onclick="openCertificate('assets/images/certifications/A6.jpg', 'Web Accessibility', 'Web accessibility certification emphasizing inclusive design and WCAG 2.1 compliance standards.')">
+              <img src="assets/images/certifications/A6.jpg" alt="Certification 6">
+            </div>
+            <div class="cert" onclick="openCertificate('assets/images/certifications/A7.jpg', 'DevOps Fundamentals', 'DevOps certification covering CI/CD pipelines, containerization, and modern deployment practices.')">
+              <img src="assets/images/certifications/A7.jpg" alt="Certification 7">
+            </div>
             <!-- Repeat for seamless scroll -->
-            <div class="cert"><img src="assets/images/certifications/A1.jpg" alt="Certification 1"></div>
-            <div class="cert"><img src="assets/images/certifications/A2.jpg" alt="Certification 2"></div>
-            <div class="cert"><img src="assets/images/certifications/A3.jpg" alt="Certification 3"></div>
+            <div class="cert" onclick="openCertificate('assets/images/certifications/A1.jpg', 'AWS Cloud Practitioner', 'Achieved AWS Cloud Practitioner certification in 2023. This certification validated my foundational knowledge of AWS services and cloud concepts.')">
+              <img src="assets/images/certifications/A1.jpg" alt="Certification 1">
+            </div>
+            <div class="cert" onclick="openCertificate('assets/images/certifications/A2.jpg', 'Google Cloud Associate', 'Completed Google Cloud Associate certification focusing on cloud architecture and deployment strategies.')">
+              <img src="assets/images/certifications/A2.jpg" alt="Certification 2">
+            </div>
+            <div class="cert" onclick="openCertificate('assets/images/certifications/A3.jpg', 'React.js Developer', 'Advanced React.js certification covering hooks, context, and modern React patterns for building scalable applications.')">
+              <img src="assets/images/certifications/A3.jpg" alt="Certification 3">
+            </div>
+            <div class="cert" onclick="openCertificate('assets/images/certifications/A4.jpg', 'Full Stack Development', 'Comprehensive full-stack development certification covering both frontend and backend technologies.')">
+              <img src="assets/images/certifications/A4.jpg" alt="Certification 4">
+            </div>
+            <div class="cert" onclick="openCertificate('assets/images/certifications/A5.jpg', 'JavaScript ES6+', 'Modern JavaScript certification focusing on ES6+ features, async programming, and advanced concepts.')">
+              <img src="assets/images/certifications/A5.jpg" alt="Certification 5">
+            </div>
+            <div class="cert" onclick="openCertificate('assets/images/certifications/A6.jpg', 'Web Accessibility', 'Web accessibility certification emphasizing inclusive design and WCAG 2.1 compliance standards.')">
+              <img src="assets/images/certifications/A6.jpg" alt="Certification 6">
+            </div>
+            <div class="cert" onclick="openCertificate('assets/images/certifications/A7.jpg', 'DevOps Fundamentals', 'DevOps certification covering CI/CD pipelines, containerization, and modern deployment practices.')">
+              <img src="assets/images/certifications/A7.jpg" alt="Certification 7">
+            </div>
+            <!-- Third complete set for perfect seamless loop -->
+            <div class="cert" onclick="openCertificate('assets/images/certifications/A1.jpg', 'AWS Cloud Practitioner', 'Achieved AWS Cloud Practitioner certification in 2023. This certification validated my foundational knowledge of AWS services and cloud concepts.')">
+              <img src="assets/images/certifications/A1.jpg" alt="Certification 1">
+            </div>
+            <div class="cert" onclick="openCertificate('assets/images/certifications/A2.jpg', 'Google Cloud Associate', 'Completed Google Cloud Associate certification focusing on cloud architecture and deployment strategies.')">
+              <img src="assets/images/certifications/A2.jpg" alt="Certification 2">
+            </div>
+            <div class="cert" onclick="openCertificate('assets/images/certifications/A3.jpg', 'React.js Developer', 'Advanced React.js certification covering hooks, context, and modern React patterns for building scalable applications.')">
+              <img src="assets/images/certifications/A3.jpg" alt="Certification 3">
+            </div>
+            <div class="cert" onclick="openCertificate('assets/images/certifications/A4.jpg', 'Full Stack Development', 'Comprehensive full-stack development certification covering both frontend and backend technologies.')">
+              <img src="assets/images/certifications/A4.jpg" alt="Certification 4">
+            </div>
+            <div class="cert" onclick="openCertificate('assets/images/certifications/A5.jpg', 'JavaScript ES6+', 'Modern JavaScript certification focusing on ES6+ features, async programming, and advanced concepts.')">
+              <img src="assets/images/certifications/A5.jpg" alt="Certification 5">
+            </div>
+            <div class="cert" onclick="openCertificate('assets/images/certifications/A6.jpg', 'Web Accessibility', 'Web accessibility certification emphasizing inclusive design and WCAG 2.1 compliance standards.')">
+              <img src="assets/images/certifications/A6.jpg" alt="Certification 6">
+            </div>
+            <div class="cert" onclick="openCertificate('assets/images/certifications/A7.jpg', 'DevOps Fundamentals', 'DevOps certification covering CI/CD pipelines, containerization, and modern deployment practices.')">
+              <img src="assets/images/certifications/A7.jpg" alt="Certification 7">
+            </div>
           </div>
         </div>
 
-        <!-- DIV-3: Skills marquee at bottom -->
-        <div class="skills-bottom">
-          <div class="skills-track" id="skillsTrack">
-            <span class="skill">JAVA</span>
-            <span class="skill">HTML</span>
-            <span class="skill">CSS</span>
-            <span class="skill">JAVASCRIPT</span>
-            <span class="skill">REACT JS</span>
-            <span class="skill">SPRINGBOOT</span>
-            <span class="skill">SQL</span>
-            <span class="skill">REST API</span>
-            <span class="skill">POSTMAN</span>
-            <span class="skill">CLOUD TECHNOLOGIES</span>
-            <!-- Repeat for seamless scroll -->
-            <span class="skill">JAVA</span>
-            <span class="skill">HTML</span>
-            <span class="skill">CSS</span>
-            <span class="skill">JAVASCRIPT</span>
-            <span class="skill">REACT JS</span>
-            <span class="skill">SPRINGBOOT</span>
+        <!-- DIV-3: Skills marquee section -->
+        <div class="skills-section">
+          <h2 class="skills-heading">Skills</h2>
+          <div class="skills-marquee">
+            <!-- Row 1: Left to Right -->
+            <div class="skills-row left-to-right">
+              <div class="skills-track">
+                <div class="skill-item"><i class="devicon-java-plain"></i><span>JAVA</span></div>
+                <div class="skill-item"><i class="devicon-html5-plain"></i><span>HTML</span></div>
+                <div class="skill-item"><i class="devicon-css3-plain"></i><span>CSS</span></div>
+                <div class="skill-item"><i class="devicon-javascript-plain"></i><span>JAVASCRIPT</span></div>
+                <div class="skill-item"><i class="devicon-react-original"></i><span>REACT JS</span></div>
+                <div class="skill-item"><i class="devicon-spring-plain"></i><span>SPRINGBOOT</span></div>
+                <div class="skill-item"><i class="devicon-mysql-plain"></i><span>SQL</span></div>
+                <div class="skill-item"><i class="fas fa-code"></i><span>REST API</span></div>
+                <div class="skill-item"><i class="devicon-postman-plain"></i><span>POSTMAN</span></div>
+                <div class="skill-item"><i class="devicon-amazonwebservices-original"></i><span>CLOUD TECHNOLOGIES</span></div>
+                <!-- Duplicated for seamless loop -->
+                <div class="skill-item"><i class="devicon-java-plain"></i><span>JAVA</span></div>
+                <div class="skill-item"><i class="devicon-html5-plain"></i><span>HTML</span></div>
+                <div class="skill-item"><i class="devicon-css3-plain"></i><span>CSS</span></div>
+                <div class="skill-item"><i class="devicon-javascript-plain"></i><span>JAVASCRIPT</span></div>
+                <div class="skill-item"><i class="devicon-react-original"></i><span>REACT JS</span></div>
+                <div class="skill-item"><i class="devicon-spring-plain"></i><span>SPRINGBOOT</span></div>
+                <div class="skill-item"><i class="devicon-mysql-plain"></i><span>SQL</span></div>
+                <div class="skill-item"><i class="devicon-postman-plain"></i><span>POSTMAN</span></div>
+                <div class="skill-item"><i class="devicon-amazonwebservices-original"></i><span>CLOUD TECHNOLOGIES</span></div>
+              </div>
+            </div>
+            
+            <!-- Row 2: Right to Left -->
+            <div class="skills-row right-to-left">
+              <div class="skills-track">
+                <div class="skill-item"><i class="devicon-spring-plain"></i><span>SPRINGBOOT</span></div>
+                <div class="skill-item"><i class="devicon-mysql-plain"></i><span>SQL</span></div>
+                <div class="skill-item"><i class="fas fa-code"></i><span>REST API</span></div>
+                <div class="skill-item"><i class="devicon-postman-plain"></i><span>POSTMAN</span></div>
+                <div class="skill-item"><i class="devicon-amazonwebservices-original"></i><span>CLOUD TECHNOLOGIES</span></div>
+                <div class="skill-item"><i class="devicon-java-plain"></i><span>JAVA</span></div>
+                <div class="skill-item"><i class="devicon-html5-plain"></i><span>HTML</span></div>
+                <div class="skill-item"><i class="devicon-css3-plain"></i><span>CSS</span></div>
+                <div class="skill-item"><i class="devicon-javascript-plain"></i><span>JAVASCRIPT</span></div>
+                <div class="skill-item"><i class="devicon-react-original"></i><span>REACT JS</span></div>
+                <!-- Duplicated for seamless loop -->
+                <div class="skill-item"><i class="devicon-spring-plain"></i><span>SPRINGBOOT</span></div>
+                <div class="skill-item"><i class="devicon-mysql-plain"></i><span>SQL</span></div>
+                <div class="skill-item"><i class="fas fa-code"></i><span>REST API</span></div>
+                <div class="skill-item"><i class="devicon-postman-plain"></i><span>POSTMAN</span></div>
+                <div class="skill-item"><i class="devicon-amazonwebservices-original"></i><span>CLOUD TECHNOLOGIES</span></div>
+                <div class="skill-item"><i class="devicon-java-plain"></i><span>JAVA</span></div>
+                <div class="skill-item"><i class="devicon-html5-plain"></i><span>HTML</span></div>
+                <div class="skill-item"><i class="devicon-css3-plain"></i><span>CSS</span></div>
+                <div class="skill-item"><i class="devicon-javascript-plain"></i><span>JAVASCRIPT</span></div>
+                <div class="skill-item"><i class="devicon-react-original"></i><span>REACT JS</span></div>
+              </div>
+            </div>
+            
+            <!-- Row 3: Left to Right -->
+            <div class="skills-row left-to-right">
+              <div class="skills-track">
+                <div class="skill-item"><i class="devicon-css3-plain"></i><span>CSS</span></div>
+                <div class="skill-item"><i class="devicon-react-original"></i><span>REACT JS</span></div>
+                <div class="skill-item"><i class="devicon-java-plain"></i><span>JAVA</span></div>
+                <div class="skill-item"><i class="devicon-amazonwebservices-original"></i><span>CLOUD TECHNOLOGIES</span></div>
+                <div class="skill-item"><i class="devicon-html5-plain"></i><span>HTML</span></div>
+                <div class="skill-item"><i class="devicon-postman-plain"></i><span>POSTMAN</span></div>
+                <div class="skill-item"><i class="devicon-javascript-plain"></i><span>JAVASCRIPT</span></div>
+                <div class="skill-item"><i class="devicon-spring-plain"></i><span>SPRINGBOOT</span></div>
+                <div class="skill-item"><i class="devicon-mysql-plain"></i><span>SQL</span></div>
+                <div class="skill-item"><i class="fas fa-code"></i><span>REST API</span></div>
+                <!-- Duplicated for seamless loop -->
+                <div class="skill-item"><i class="devicon-css3-plain"></i><span>CSS</span></div>
+                <div class="skill-item"><i class="devicon-react-original"></i><span>REACT JS</span></div>
+                <div class="skill-item"><i class="devicon-java-plain"></i><span>JAVA</span></div>
+                <div class="skill-item"><i class="devicon-amazonwebservices-original"></i><span>CLOUD TECHNOLOGIES</span></div>
+                <div class="skill-item"><i class="devicon-html5-plain"></i><span>HTML</span></div>
+                <div class="skill-item"><i class="devicon-postman-plain"></i><span>POSTMAN</span></div>
+                <div class="skill-item"><i class="devicon-javascript-plain"></i><span>JAVASCRIPT</span></div>
+                <div class="skill-item"><i class="devicon-spring-plain"></i><span>SPRINGBOOT</span></div>
+                <div class="skill-item"><i class="devicon-mysql-plain"></i><span>SQL</span></div>
+                <div class="skill-item"><i class="fas fa-code"></i><span>REST API</span></div>
+              </div>
+            </div>
+            
+
           </div>
         </div>
       </section>
 
       <section id="projects">
+        <br><br><br><br><br><br>
         <h2>Selected Projects</h2>
         <p>A few things I've built recently — click to explore.</p>
         <div class="projects-grid">
@@ -167,12 +297,9 @@
         <p>Looking for collaboration or full-time roles. Let's connect and create something amazing together.</p>
         <div class="contact-form">
           <form onsubmit="event.preventDefault();alert('Thanks! I will get back to you.');">
-            <label>Name</label>
-            <input type="text" required>
-            <label>Email</label>
-            <input type="email" required>
-            <label>Message</label>
-            <textarea required placeholder="Tell me about your project or opportunity..."></textarea>
+            <input type="text" placeholder="Name" required>
+            <input type="email" placeholder="Email" required>
+            <textarea required placeholder="Message"></textarea>
             <div class="form-buttons">
               <button type="submit" class="btn-primary">Send Message</button>
               <button type="reset" class="btn-secondary">Reset</button>
@@ -189,6 +316,19 @@
     <!-- Cursor Effects -->
     <div class="cursor-glow"></div>
 
+    <!-- Certificate Overlay -->
+    <div class="certificate-overlay" id="certificateOverlay">
+      <div class="overlay-content hvr-sweep-to-left">
+        <img id="overlayImage" src="" alt="Certificate">
+        <div class="overlay-text" id="overlayText">
+          <h3 id="overlayTitle">Certificate Title</h3>
+          <p id="overlayDescription">This is a placeholder text for certificate description. It will be replaced with actual certificate details and experiences.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- AOS Script -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- External JavaScript -->
     <script src="script.js"></script>
   </body>

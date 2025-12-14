@@ -9,7 +9,7 @@
 
 /* Theme variables - exact colors */
 :root{
-  --bg:#102D33; /* main background */
+  --bg:#151515; /* main background */
   --brand-gradient: linear-gradient(45deg, #3EDFFF, #FFD64E); /* name gradient */
   --role-color:#3EDFFF; /* SOFTWARE DEVELOPER */
   --content-color:#BFE3FF; /* main content text */
@@ -216,9 +216,9 @@ body::before{
 #about{
   display:grid;
   grid-template-columns:1fr 180px; /* main content | certifications sidebar */
-  grid-template-rows:1fr 100px; /* about text | skills marquee */
-  gap:15px; /* smaller gap */
-  height:calc(100vh - 90px); /* account for 50px top + 40px bottom padding */
+  grid-template-rows:75vh 25vh; /* 75% for content, 25% for skills */
+  gap:15px;
+  height:calc(100vh - 90px); /* increased to 110vh */
   grid-template-areas: 
     "content certifications"
     "skills certifications";
@@ -229,13 +229,14 @@ body::before{
   grid-area:content;
   display:flex;
   flex-direction:column;
-  gap:15px; /* smaller gap */
-  /* removed overflow:hidden to allow natural content flow */
+  gap:10px;
+  overflow:hidden; /* prevent content from overflowing grid area */
+  height:100%; /* use full allocated grid height */
 }
 
 .about-content h1{
   font-family:'Black Ops One',sans-serif; 
-  font-size:25px; /* smaller heading for better fit */
+  font-size:36px; /* smaller heading for better fit */
   margin:0; 
   color:var(--nav-color);
   line-height:1.1;
@@ -248,37 +249,115 @@ body::before{
   margin:0;
 }
 
-/* DIV-3: Skills marquee at bottom */
-.skills-bottom{
-  grid-area:skills;
-  height:100px; /* fixed height to match grid */
-  overflow:hidden;
-  background:rgba(255,255,255,0.02);
-  border-radius:12px;
-  padding:15px;
-  display:flex;
-  align-items:center;
+
+
+/* DIV-3: Skills Section */
+.skills-section {
+  grid-area: skills;
+  overflow: hidden;
+  height: 100%; /* use full allocated grid height */
+  display: flex;
+  flex-direction: column;
 }
 
-.skills-track{
-  display:flex; 
-  gap:30px; 
-  white-space:nowrap; 
-  align-items:center;
-  animation:marquee 20s linear infinite;
+.skills-heading {
+  font-family: 'Black Ops One', sans-serif;
+  font-size: 22px;
+  color: #FFD64E;
+  margin: 0 0 25px 0;
+  text-align: left;
 }
 
-.skills-track:hover{
-  animation-play-state:paused;
+.skills-marquee {
+  display: flex;
+  flex-direction: column;
+  gap: 5px; /* very small gap for 25% space */
+  height: 100%; /* use all available 25% grid space */
 }
 
-.skill{
-  padding:12px 18px; 
-  background:rgba(255,255,255,0.05); 
-  border-radius:8px; 
-  color:#FFD64E; 
-  font-weight:600;
-  font-size:14px; /* smaller font for better fit */
+.skills-row {
+  height: 35px; /* very small height for 25% space */
+  overflow: hidden;
+  position: relative;
+}
+
+.skills-track {
+  display: flex;
+  gap: 25px;
+  align-items: center;
+  height: 100%;
+  width: max-content;
+}
+
+.skill-item {
+  display: flex;
+  align-items: center;
+  gap: 5px; /* very small gap */
+  padding: 4px 10px; /* very small padding for 25% space */
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 15px; /* smaller radius */
+  color: #FFD64E;
+  font-weight: 600;
+  font-size: 10px; /* much smaller font for 25% space */
+  white-space: nowrap;
+  min-width: max-content;
+}
+
+.skill-item i {
+  font-size: 12px; /* smaller icon for 25% space */
+  /* removed color override to show true brand colors */
+}
+
+/* Enable colored devicons - override any color restrictions */
+.skill-item i[class*="devicon-"] {
+  color: inherit !important;
+}
+
+/* Specific brand colors for skill icons */
+.skill-item i.devicon-java-plain { color: #f89820 !important; }
+.skill-item i.devicon-html5-plain { color: #e34c26 !important; }
+.skill-item i.devicon-css3-plain { color: #1572b6 !important; }
+.skill-item i.devicon-javascript-plain { color: #f0db4f !important; }
+.skill-item i.devicon-react-original { color: #61dafb !important; }
+.skill-item i.devicon-spring-plain { color: #6db33f !important; }
+.skill-item i.devicon-mysql-plain { color: #00758f !important; }
+.skill-item i.devicon-postman-plain { color: #ff6c37 !important; }
+.skill-item i.devicon-amazonwebservices-original { color: #ff9900 !important; }
+.skill-item i.fas.fa-code { color: #00d4aa !important; } /* REST API custom color */
+
+/* Animation directions */
+.left-to-right .skills-track {
+  animation: marqueeLeft 30s linear infinite;
+}
+
+.right-to-left .skills-track {
+  animation: marqueeRight 40s linear infinite;
+}
+
+@keyframes marqueeLeft {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-50%); }
+}
+
+@keyframes marqueeRight {
+  0% { transform: translateX(-50%); }
+  100% { transform: translateX(0%); }
+}
+
+/* Responsive Skills */
+@media (max-width: 768px) {
+  .skills-marquee {
+    height: 100%; /* use full 25% space on mobile */
+  }
+  
+  .skills-row:nth-child(3) {
+    display: none; /* hide only row 3 on mobile */
+  }
+  
+  .skill-item {
+    font-size: 9px; /* even smaller on mobile */
+    padding: 3px 8px;
+  }
 }
 
 @keyframes marquee{
@@ -289,18 +368,18 @@ body::before{
 /* DIV-4: Certifications sidebar */
 .cert-sidebar{
   grid-area:certifications;
-  height:100%; /* use full grid height */
+  height:100%; /* spans full 80vh (both grid rows) */
   overflow:hidden;
   background:rgba(255,255,255,0.02);
   border-radius:12px;
-  padding:10px; /* reduced padding */
+  padding:10px;
 }
 
 .cert-track{
   display:flex; 
   flex-direction:column; 
   gap:10px; /* smaller gap */
-  animation:marquee-vert 15s linear infinite;
+  animation:marquee-vert 20s linear infinite;
 }
 
 .cert-track:hover{
@@ -317,6 +396,12 @@ body::before{
   justify-content:center;
   flex-shrink:0;
   overflow:hidden;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.cert:hover {
+  transform: scale(1.05);
 }
 
 .cert img{
@@ -326,9 +411,95 @@ body::before{
   border-radius:6px; /* smaller radius */
 }
 
+/* Perfect seamless circular animation with 3 sets */
 @keyframes marquee-vert{
-  0%{transform:translateY(0)}
-  100%{transform:translateY(-50%)}
+  0%{transform:translateY(0%)}
+  100%{transform:translateY(-33.33%)} /* Move 1/3 to create perfect loop with 3 sets */
+}
+
+/* Certificate Overlay Styles */
+.certificate-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.9);
+  z-index: 1000;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(10px);
+}
+
+.overlay-content {
+  position: relative;
+  max-width: 800px;
+  max-height: 800px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 15px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.overlay-content img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+.overlay-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  backdrop-filter: blur(5px);
+}
+
+.overlay-content:hover .overlay-text {
+  opacity: 1;
+}
+
+.overlay-text h3 {
+  font-size: 24px;
+  margin: 0 0 20px 0;
+  color: #3EDFFF;
+  font-weight: 700;
+}
+
+.overlay-text p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin: 0;
+  color: #F4F4F4;
+}
+
+/* Custom sweep to left for certificate overlay */
+.overlay-content.hvr-sweep-to-left:before {
+  background: #3EDFFF !important;
+}
+
+/* Mobile/Tablet: Show text on tap instead of hover */
+@media (max-width: 1024px) {
+  .overlay-content:hover .overlay-text {
+    opacity: 0;
+  }
+  
+  .overlay-content.show-text .overlay-text {
+    opacity: 1;
+  }
 }
 
 /* Smooth glowing cursor aura following mouse, with blur and radial gradient glow */
@@ -370,16 +541,16 @@ body::before{
 
 #projects h2{
   font-family:'Black Ops One',sans-serif; 
-  font-size:48px; 
+  font-size:36px; 
   margin:0 0 30px 0; 
   color:var(--nav-color);
-  text-align:center;
+  text-align:left;
 }
 
 #projects p{
   color:var(--content-color); 
   font-size:18px;
-  text-align:center;
+  text-align:left;
   margin:0 0 50px 0;
 }
 
@@ -451,9 +622,9 @@ body::before{
 
 #contact h2{
   font-family:'Black Ops One',sans-serif; 
-  font-size:48px; 
+  font-size:36px; 
   margin:0 0 20px 0; 
-  color:var(--content-color);
+  color:var(--nav-color);
 }
 
 #contact > p{
@@ -489,6 +660,7 @@ body::before{
 .contact-form textarea{
   width:100%;
   padding:12px 15px;
+  margin: 10px 0;
   border-radius:8px;
   border:1px solid rgba(255,255,255,0.1);
   background:var(--input-bg);
@@ -496,6 +668,11 @@ body::before{
   font-family:inherit;
   font-size:14px;
   transition:border-color 0.3s ease;
+}
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+    color: #f4f4f4aa; 
+    opacity: 0.5;      
 }
 
 .contact-form input:focus,
@@ -505,7 +682,7 @@ body::before{
 }
 
 .contact-form textarea{
-  min-height:120px;
+  min-height:100px;
   resize:vertical;
 }
 
@@ -646,9 +823,6 @@ body::before{
   }
   .cert-sidebar{
     height:200px;
-  }
-  .skills-track{
-    animation-duration:30s;
   }
   .cert-track{
     animation-duration:20s;
