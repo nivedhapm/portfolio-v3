@@ -200,7 +200,7 @@ body::before{
   padding:50px 60px 40px 100px; /* top right bottom left padding */
   position:relative;
   z-index:10; /* ensure it's above background */
-  /* removed overflow:hidden to allow scrolling */
+  overflow-x:hidden; /* prevent horizontal scroll */
 }
 
 /* Landing/Home section - empty by default */
@@ -211,6 +211,7 @@ body::before{
   justify-content:center;
   /* Empty section - just shows the background */
 }
+
 
 /* DIV-2, DIV-3, DIV-4: About section grid layout */
 #about{
@@ -535,79 +536,263 @@ body::before{
 
 /* Projects Section */
 #projects{
-  min-height:100vh; /* each section takes at least full viewport height */
+  margin:130px 0 80px 0;
+  min-height:100vh;
   padding:80px 0;
 }
 
 #projects h2{
-  font-family:'Black Ops One',sans-serif; 
-  font-size:36px; 
-  margin:0 0 30px 0; 
+  font-family:'Black Ops One',sans-serif;
+  font-size:40px;
   color:var(--nav-color);
+  margin:0 0 15px 0;
   text-align:left;
 }
 
-#projects p{
+.projects-subtitle{
   color:var(--content-color); 
   font-size:18px;
   text-align:left;
-  margin:0 0 50px 0;
+  margin:0 0 80px 0;
 }
 
-.projects-grid{
-  display:grid;
-  grid-template-columns:repeat(auto-fit, minmax(300px, 1fr));
-  gap:30px;
-  margin-top:40px;
+.projects-container{
+  display:flex;
+  flex-direction:column;
+  gap:100px;
+  margin-top:60px;
+  max-width:900px;
+  margin-left:auto;
+  margin-right:auto;
 }
 
-.project-card{
-  background:rgba(255,255,255,0.02);
-  border-radius:15px;
-  overflow:hidden;
-  transition:all 0.3s ease;
+.project-item{
+  display:flex;
+  flex-direction:column;
+  gap:40px;
+  width:100%;
+}
+
+/* Device Mockups - Top Section */
+.project-preview{
+  position:relative;
+  width:100%;
+  display:flex;
+  justify-content:center;
+  min-height:400px;
+}
+
+.device-mockups{
+  position:relative;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  width:100%;
+}
+
+.mockup-desktop{
+  width:100%;
+  max-width:650px;
+  height:auto;
+  border-radius:12px;
+  box-shadow:0 20px 60px rgba(0,0,0,0.4);
+  background:#1a1a1a;
+  padding:15px;
+  border:2px solid rgba(255,255,255,0.1);
+  z-index:1;
   position:relative;
 }
 
-.project-card:hover{
-  background:var(--project-hover);
-  transform:translateY(-8px);
-  box-shadow:0 20px 40px rgba(0,0,0,0.3);
+.mockup-tablet{
+  width: 80%;
+  max-width:220px;
+  height:auto;
+  border-radius:8px;
+  box-shadow:0 15px 40px rgba(0,0,0,0.4);
+  background:#1a1a1a;
+  padding:10px;
+  position:absolute;
+  right:13%;
+  bottom:-5px;
+  border:2px solid rgba(255,255,255,0.1);
+  z-index:2;
 }
 
-.project-card video{
+.mockup-mobile{
+  width:20%;
+  max-width:130px;
+  height:auto;
+  border-radius:8px;
+  box-shadow:0 15px 40px rgba(0,0,0,0.4);
+  background:#1a1a1a;
+  padding:8px;
+  position:absolute;
+  right:0;
+  bottom:-20px;
+  border:2px solid rgba(255,255,255,0.1);
+  z-index:3;
+}
+
+/* Project Info - Bottom Section */
+.project-info{
+  display:flex;
+  flex-direction:column;
+  gap:30px;
   width:100%;
-  height:200px;
-  object-fit:cover;
 }
 
-.project-content{
-  padding:20px;
+.project-header{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  flex-wrap:wrap;
+  gap:20px;
 }
 
-.project-content h3{
+.project-header h3{
   font-family:'Black Ops One',sans-serif;
   color:var(--nav-color);
-  font-size:18px;
-  margin:0 0 10px 0;
-  transition:color 0.3s ease;
+  font-size:22px;
+  margin:0;
+  letter-spacing:2px;
 }
 
-.project-card:hover .project-content h3{
-  color:var(--project-hover-text);
+.project-buttons{
+  display:flex;
+  gap:15px;
 }
 
-.project-content p{
-  color:var(--content-color);
+.btn-demo,
+.btn-code{
+  padding:10px 25px;
+  border:2px solid #3EDFFF;
+  background:transparent;
+  color:#3EDFFF;
+  text-decoration:none;
+  font-weight:600;
   font-size:14px;
-  line-height:1.5;
+  border-radius:5px;
+  transition:all 0.3s ease;
+  cursor:pointer;
+  display:inline-block;
+}
+
+.btn-demo:hover{
+  background:#3EDFFF;
+  color:#102D33;
+  transform:translateY(-2px);
+  box-shadow:0 5px 15px rgba(62,223,255,0.3);
+}
+
+.btn-code{
+  border-color:#F4F4F4;
+  color:#F4F4F4;
+}
+
+.btn-code:hover{
+  background:#F4F4F4;
+  color:#102D33;
+  transform:translateY(-2px);
+  box-shadow:0 5px 15px rgba(244,244,244,0.3);
+}
+
+.project-details{
+  display:flex;
+  flex-direction:column;
+  gap:20px;
+}
+
+.project-description{
+  color:var(--content-color);
+  font-size:16px;
+  line-height:1.8;
   margin:0;
   text-align:left;
-  transition:color 0.3s ease;
 }
 
-.project-card:hover .project-content p{
-  color:var(--project-hover-text);
+.project-tools{
+  display:flex;
+  flex-wrap:wrap;
+  gap:10px;
+}
+
+.tool-tag{
+  padding:6px 14px;
+  background:rgba(255,255,255,0.05);
+  border-radius:5px;
+  color:#FFD64E;
+  font-size:11px;
+  font-weight:600;
+  letter-spacing:0.5px;
+  border:1px solid rgba(255,214,78,0.2);
+}
+
+/* Responsive Projects */
+@media (max-width:1024px){
+  .projects-container{
+    max-width:700px;
+  }
+  
+  .project-preview{
+    min-height:350px;
+  }
+  
+  .project-header h3{
+    font-size:28px;
+  }
+  
+  .mockup-desktop{
+    max-width:500px;
+  }
+}
+
+@media (max-width:768px){
+  #projects{
+    padding:80px 20px 60px 20px;
+  }
+  
+  #projects h2{
+    font-size:32px;
+  }
+  
+  .projects-container{
+    gap:80px;
+    max-width:100%;
+  }
+  
+  .project-preview{
+    min-height:250px;
+  }
+  
+  .project-header{
+    flex-direction:column;
+    align-items:flex-start;
+  }
+  
+  .project-header h3{
+    font-size:24px;
+  }
+  
+  .btn-demo,
+  .btn-code{
+    padding:8px 20px;
+    font-size:12px;
+  }
+  
+  .project-description{
+    font-size:14px;
+  }
+  
+  .tool-tag{
+    font-size:10px;
+    padding:5px 12px;
+  }
+  
+  .mockup-tablet,
+  .mockup-mobile{
+    width:35%;
+    max-width:150px;
+  }
 }
 
 /* Contact Section */
