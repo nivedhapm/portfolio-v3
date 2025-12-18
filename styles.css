@@ -430,11 +430,7 @@ body::before{
 /* Responsive Skills */
 @media (max-width: 768px) {
   .skills-marquee {
-    height: 100%; /* use full 25% space on mobile */
-  }
-  
-  .skills-row:nth-child(3) {
-    display: none; /* hide only row 3 on mobile */
+    height: 100%; /* use full space on mobile */
   }
   
   .skill-item {
@@ -1174,6 +1170,21 @@ body::before{
   }
 }
 
+/* Tablet View - Proportional certifications */
+@media (max-width:900px) and (min-width:601px){
+  .cert-sidebar{
+    height:450px !important;
+  }
+  
+  .cert{
+    height:380px !important;
+  }
+  
+  .cert img{
+    height:380px !important;
+  }
+}
+
 @media (max-width:900px){
   :root{--left-width:100%; --right-width:100%}
   
@@ -1270,12 +1281,68 @@ body::before{
     flex-direction:column;
     gap:30px;
     scroll-margin-top:80px; /* Adjust scroll margin for mobile */
+    height:auto; /* Remove fixed height for mobile */
   }
+  
+  /* About content - full display */
+  .about-content{
+    height:auto;
+    overflow:visible;
+  }
+  
+  .about-content h1{
+    font-size:32px;
+    margin-bottom:20px;
+  }
+  
+  .about-content p{
+    font-size:15px;
+    line-height:1.7;
+    margin-bottom:15px;
+  }
+  
+  /* Certifications - mobile dimensions */
   .cert-sidebar{
-    height:200px;
+    height:300px;
+    width:100%;
   }
+  
+  .cert{
+    width:100%;
+    height:250px;
+  }
+  
+  .cert img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+  }
+  
   .cert-track{
     animation-duration:20s;
+  }
+  
+  /* Skills - ensure 3 rows visible */
+  .skills-section{
+    height:auto;
+  }
+  
+  .skills-marquee{
+    height:auto;
+    gap:10px;
+  }
+  
+  .skills-row{
+    height:40px;
+  }
+  
+  .skill-item{
+    font-size:11px;
+    padding:6px 12px;
+  }
+  
+  .skill-item i{
+    font-size:14px;
   }
 }
 
