@@ -391,7 +391,7 @@ body::before{
 
 /* brand colors */
 .skill-item i.devicon-java-plain { color: #f89820 !important; }
-.skill-item i.devicon-html5-plain { color: #e34c26 !important; }
+.skill-item i.devicon-html5-plain { color: #f56744 !important; }
 .skill-item i.devicon-css3-plain { color: #1572b6 !important; }
 .skill-item i.devicon-javascript-plain { color: #f0db4f !important; }
 .skill-item i.devicon-react-original { color: #61dafb !important; }
@@ -399,15 +399,15 @@ body::before{
 .skill-item i.devicon-spring-plain { color: #6db33f !important; }
 .skill-item i.devicon-maven-plain { color: #c71a36 !important; }
 .skill-item i.devicon-materialui-plain { color: #007fff !important; }
-.skill-item i.fas.fa-code { color: #00d4aa !important; }
+.skill-item i.fas.fa-code { color: #12ffd0 !important; }
 .skill-item i.devicon-postman-plain { color: #ff6c37 !important; }
 .skill-item i.devicon-git-plain { color: #000000 !important; }
 .skill-item i.devicon-github-original { color: #ffffff !important; }
 .skill-item i.devicon-vercel-original { color: #ffffff !important; }
 .skill-item i.devicon-digitalocean-plain { color: #0080ff !important; }
-.skill-item i.devicon-oracle-original { color: #f89820 !important; }
+.skill-item i.devicon-oracle-original { color: #a10303 !important; }
 .skill-item i.devicon-figma-plain { color: #790394 !important; }
-.skill-item i.devicon-canva-original { color: #00c4cc !important; }
+.skill-item i.devicon-canva-original { color: #c4138f !important; }
 
 /* animations */
 .left-to-right .skills-track {
