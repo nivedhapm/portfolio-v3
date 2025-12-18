@@ -612,6 +612,14 @@ body::before{
   }
 }
 
+.overlay-text h3 {
+  font-size: 20px;
+}  
+
+.overlay-text p {
+  font-size: 13px;
+}  
+
 /* projects */
 #projects{
   margin:130px 0 80px 0;
