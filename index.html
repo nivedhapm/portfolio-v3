@@ -27,6 +27,13 @@
   </head>
   <body>
 
+    <!-- Hamburger Menu Button (Mobile/Tablet only) -->
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
     <!-- DIV-1: Left Panel -->
     <aside class="left-panel" role="complementary">
       <!-- Top section: Logo, Name, Role, Tagline -->
@@ -34,9 +41,9 @@
         <div class="logo">
           <img src="assets/images/logo.png" alt="Nivedha P M Logo">
         </div>
-        <div class="brand">NIVEDHA P M</div>
-        <div class="role">Software Developer</div>
-        <div class="tagline">I learn, experiment, and build web applications along the way.</div>
+        <div class="brand hide-in-mobile-menu">NIVEDHA P M</div>
+        <div class="role hide-in-mobile-menu">Software Developer</div>
+        <div class="tagline hide-in-mobile-menu">I learn, experiment, and build web applications along the way.</div>
       </div>
       
       <!-- Middle section: Navigation -->
@@ -48,18 +55,34 @@
 
       <!-- Bottom section: Social media icons -->
       <div class="socials" aria-label="social links">
-        <a href="#" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
-        <a href="#" title="Github"><i class="fa-brands fa-github"></i></a>
-        <a href="#" title="Email"><i class="fa-solid fa-envelope"></i></a>
+        <a href="https://www.linkedin.com/in/nivedha-p-m/" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://github.com/nivedhapm" title="Github"><i class="fa-brands fa-github"></i></a>
+        <a href="mailto:pm.nivedhaa@gmail.com" title="Email"><i class="fa-solid fa-envelope"></i></a>
         
       </div>
     </aside>
 
     <!-- Right Panel -->
     <main class="right-panel">
-      <!-- Landing/Home section - empty by default -->
+      <!-- Landing/Home section -->
       <section id="home" class="landing-section">
-        <!-- Empty landing area - just shows the background -->
+        <!-- Mobile/Tablet Hero - Hidden on Desktop -->
+        <div class="mobile-hero">
+          <div class="mobile-hero-top">
+            <div class="mobile-logo">
+              <img src="assets/images/logo.png" alt="Nivedha P M Logo">
+            </div>
+            <div class="mobile-brand">NIVEDHA P M</div>
+            <div class="mobile-role">Software Developer</div>
+            <div class="mobile-tagline">I learn, experiment, and build web applications along the way.</div>
+          </div>
+          
+          <div class="mobile-hero-socials">
+            <a href="https://www.linkedin.com/in/nivedha-p-m/" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://github.com/nivedhapm" title="Github"><i class="fa-brands fa-github"></i></a>
+            <a href="mailto:pm.nivedhaa@gmail.com" title="Email"><i class="fa-solid fa-envelope"></i></a>
+          </div>
+        </div>
       </section>
 
       <section id="about">
@@ -254,8 +277,8 @@
               <div class="project-header" data-aos="fade-right" data-aos-duration="800" data-aos-delay="200">
                 <h3>CLIPPR</h3>
                 <div class="project-buttons">
-                  <a href="#" class="btn-demo">DEMO</a>
-                  <a href="#" class="btn-code">CODE</a>
+                  <a href="https://clipprme.me" class="btn-demo">DEMO</a>
+                  <a href="https://github.com/nivedhapm/clippr" class="btn-code">CODE</a>
                 </div>
               </div>
               
@@ -295,8 +318,8 @@
               <div class="project-header" data-aos="fade-right" data-aos-duration="800" data-aos-delay="200">
                 <h3>PATHIGAI</h3>
                 <div class="project-buttons">
-                  <a href="#" class="btn-demo">DEMO</a>
-                  <a href="#" class="btn-code">CODE</a>
+                  <a href="https://www.pathigai.app" class="btn-demo">DEMO</a>
+                  <a href="https://github.com/nivedhapm/pathigai-frontend" class="btn-code">CODE</a>
                 </div>
               </div>
               
@@ -338,8 +361,8 @@
               <div class="project-header" data-aos="fade-right" data-aos-duration="800" data-aos-delay="200">
                 <h3>TECHEVO'24 HACKATHON</h3>
                 <div class="project-buttons">
-                  <a href="#" class="btn-demo">DEMO</a>
-                  <a href="#" class="btn-code">CODE</a>
+                  <a href="https://nivedhapm.github.io/Hachathon-TECHEVO-24" class="btn-demo">DEMO</a>
+                  <a href="https://github.com/nivedhapm/Hachathon-TECHEVO-24" class="btn-code">CODE</a>
                 </div>
               </div>
               
@@ -376,7 +399,7 @@
                 <h3>STEGANOGRAPHY</h3>
                 <div class="project-buttons">
                   <a href="#" class="btn-demo">DEMO</a>
-                  <a href="#" class="btn-code">CODE</a>
+                  <a href="https://github.com/nivedhapm/Steganography-Project" class="btn-code">CODE</a>
                 </div>
               </div>
               
@@ -404,18 +427,20 @@
           <!-- Project 5: Procurement Application -->
           <div class="project-item">
             <div class="project-preview" data-aos="fade-left" data-aos-duration="800">
-              <div class="device-mockups">
-                <img src="assets/images/projects/procurement-desktop.png" alt="Procurement Application Desktop" class="mockup-desktop">
-                <img src="assets/images/projects/procurement-tablet.png" alt="Procurement Application Tablet" class="mockup-tablet">
+              <div class="device-mockups mobile-only">
+                <img src="assets/images/projects/axicore-1.png" alt="Procurement Application Mobile View 1" class="mockup-mobile">
+                <img src="assets/images/projects/axicore-2.png" alt="Procurement Application Mobile View 2" class="mockup-mobile">
+                <img src="assets/images/projects/axicore-3.png" alt="Procurement Application Mobile View 3" class="mockup-mobile">
+                <img src="assets/images/projects/axicore-4.png" alt="Procurement Application Mobile View 4" class="mockup-mobile">
               </div>
             </div>
             
             <div class="project-info">
               <div class="project-header" data-aos="fade-right" data-aos-duration="800" data-aos-delay="200">
-                <h3>PROCUREMENT APPLICATION</h3>
+                <h3>AXICORE APPLICATION PROTOTYPE</h3>
                 <div class="project-buttons">
-                  <a href="#" class="btn-demo">DEMO</a>
-                  <a href="#" class="btn-code">CODE</a>
+                  <a href="https://www.figma.com/design/8eK7MNkNsvMOSZJno0QtQL/Axicore-Prototype-Final" class="btn-demo">DESIGN</a>
+                  <a href="https://www.figma.com/proto/8eK7MNkNsvMOSZJno0QtQL/Axicore-Prototype-Final" class="btn-code">PREVIEW</a>
                 </div>
               </div>
               
@@ -453,11 +478,21 @@
             </div>
           </form>
         </div>
-        <a href="assets/Resume_Nivedha P M(Updated).pdf" class="resume-link" target="_blank">
+        <a href="assets/NIVEDHA P M_Resume.pdf" class="resume-link" target="_blank">
           <i class="fa-solid fa-arrow-up-right-from-square"></i>
           Download my Resume
         </a>
       </section>
+
+      <!-- Mobile/Tablet Footer with Social Links -->
+      <footer class="mobile-footer">
+        <div class="footer-socials">
+          <a href="https://www.linkedin.com/in/nivedha-p-m/" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="https://github.com/nivedhapm" title="Github"><i class="fa-brands fa-github"></i></a>
+          <a href="mailto:pm.nivedhaa@gmail.com" title="Email"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+        <p class="footer-text">© 2025 Nivedha P M. All rights reserved.</p>
+      </footer>
     </main>
 
     <!-- Cursor Effects -->
