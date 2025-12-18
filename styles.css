@@ -909,10 +909,44 @@ body::before{
     padding:5px 12px;
   }
   
-  .mockup-tablet,
-  .mockup-mobile{
-    width:35%;
+  .mockup-tablet{
+    width:45%;
     max-width:150px;
+  }
+  .mockup-mobile{
+    width:30%;
+    max-width:100px;
+  }
+  
+  /* Axicore mobile-only mockups - maintain tablet view sizing */
+  .device-mockups.mobile-only{
+    min-height:0;
+    padding:30px 20px;
+  }
+  
+  .device-mockups.mobile-only .mockup-mobile{
+    width:22%;
+    max-width:140px;
+  }
+  
+  .device-mockups.mobile-only .mockup-mobile:nth-child(1){
+    left:10%;
+    top:15%;
+  }
+  
+  .device-mockups.mobile-only .mockup-mobile:nth-child(2){
+    left:30%;
+    top:20%;
+  }
+  
+  .device-mockups.mobile-only .mockup-mobile:nth-child(3){
+    left:50%;
+    top:25%;
+  }
+  
+  .device-mockups.mobile-only .mockup-mobile:nth-child(4){
+    left:70%;
+    top:30%;
   }
 }
 
