@@ -450,7 +450,7 @@
                   between clients and contractors in construction projects. Engaged with stakeholders to ensure alignment 
                   with project goals and user needs. Conducted user testing sessions and gathered feedback to refine the 
                   prototype, enhancing usability and functionality while adopting user-centric designs that reduced process 
-                  bottlenecks by 20%.
+                  bottlenecks.
                 </p>
                 <div class="project-tools">
                   <span class="tool-tag">FIGMA</span>
@@ -468,10 +468,11 @@
         <h2>Get In Touch</h2>
         <p>Looking for collaboration or full-time roles. Let's connect and create something amazing together.</p>
         <div class="contact-form">
-          <form onsubmit="event.preventDefault();alert('Thanks! I will get back to you.');">
-            <input type="text" placeholder="Name" required>
-            <input type="email" placeholder="Email" required>
-            <textarea required placeholder="Message"></textarea>
+          <form action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="7783580b-1a87-43b6-9d9b-76071b3df9ad">
+            <input type="text" name="name" placeholder="Name" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <textarea name="message" required placeholder="Message"></textarea>
             <div class="form-buttons">
               <button type="submit" class="btn-primary">Send Message</button>
               <button type="reset" class="btn-secondary">Reset</button>
