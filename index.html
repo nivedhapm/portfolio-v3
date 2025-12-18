@@ -4,30 +4,19 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>Nivedha P M — Portfolio</title>
-    <!-- Favicon -->
     <link rel="icon" type="image/png" href="assets/images/logo.png">
-    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Blinker:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- DevIcon for skill logos -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
-    <!-- Hover.css for hover effects -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css">
-    <!-- Magic.css for animation effects -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/miniMAC/magic/magic.min.css">
-    <!-- AOS - Animate on Scroll -->
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
-    <!-- External CSS -->
     <link rel="stylesheet" href="styles.css">
-    <!-- GSAP + ScrollTrigger + Lenis -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-    <script src="https://unpkg.com/@studio-freight/lenis@1.0.27/dist/lenis.min.js"></script>
   </head>
   <body>
 
-    <!-- Hamburger Menu Button (Mobile/Tablet only) -->
     <button class="hamburger" id="hamburger" aria-label="Toggle menu">
       <span></span>
       <span></span>
@@ -36,7 +25,6 @@
 
     <!-- DIV-1: Left Panel -->
     <aside class="left-panel" role="complementary">
-      <!-- Top section: Logo, Name, Role, Tagline -->
       <div class="top-section">
         <div class="logo">
           <img src="assets/images/logo.png" alt="Nivedha P M Logo">
@@ -46,14 +34,12 @@
         <div class="tagline hide-in-mobile-menu">I learn, experiment, and build web applications along the way.</div>
       </div>
       
-      <!-- Middle section: Navigation -->
       <nav class="nav-links" id="nav">
         <a href="#about">About</a>
         <a href="#projects">Projects</a>
         <a href="#contact">Contact</a>
       </nav>
 
-      <!-- Bottom section: Social media icons -->
       <div class="socials" aria-label="social links">
         <a href="https://www.linkedin.com/in/nivedha-p-m/" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
         <a href="https://github.com/nivedhapm" title="Github"><i class="fa-brands fa-github"></i></a>
@@ -64,9 +50,7 @@
 
     <!-- Right Panel -->
     <main class="right-panel">
-      <!-- Landing/Home section -->
       <section id="home" class="landing-section">
-        <!-- Mobile/Tablet Hero - Hidden on Desktop -->
         <div class="mobile-hero">
           <div class="mobile-hero-top">
             <div class="mobile-logo">
@@ -101,69 +85,68 @@
         <!-- DIV-4: Certifications sidebar -->
         <div class="cert-sidebar">
           <div class="cert-track" id="certTrack">
-            <div class="cert" onclick="openCertificate('assets/images/certifications/A1.jpg', 'AWS Cloud Practitioner', 'Achieved AWS Cloud Practitioner certification in 2023. This certification validated my foundational knowledge of AWS services and cloud concepts.')">
+            <div class="cert" onclick="openCertificate('assets/images/certifications/A1.jpg', '1,289 plant species. One school campus. Countless bunked classes.', 'Our project: catalog every plant on our massive KV Air Force Station campus - Botanical names, benefits, even toxicities. A month of exploring the grounds (and yes, sneaking out of a few classes) got me close to my principal, Mrs Sundari Krishna Moorthi. We made it to regionals and nationals! That green campus taught me so much more than books ever could. Proud to be a KVian and still smile, thinking about those adventurous days.')">
               <img src="assets/images/certifications/A1.jpg" alt="Certification 1">
             </div>
-            <div class="cert" onclick="openCertificate('assets/images/certifications/A2.jpg', 'Google Cloud Associate', 'Completed Google Cloud Associate certification focusing on cloud architecture and deployment strategies.')">
+            <div class="cert" onclick="openCertificate('assets/images/certifications/A2.jpg', 'Grade 8. 20 days away from home. My first big failure.', 'I fell in love with Taekwondo in 2013—my coach called me a natural, and I hadn\'t lost a match. At Nationals in Ahmedabad, as the youngest, I became everyone\'s little sister. Training was brutal: bleeding, patching up and taking care of each other, pushing through total exhaustion. Unexpectedly, I lost in the third match. I held it together until I was home, then cried. Worst part? I quit afterwards. Years later, I realised quitting was the real mistake—resilience matters more than staying undefeated. I miss those 20 days, the team, and Taekwondo so much.')">
               <img src="assets/images/certifications/A2.jpg" alt="Certification 2">
             </div>
-            <div class="cert" onclick="openCertificate('assets/images/certifications/A3.jpg', 'React.js Developer', 'Advanced React.js certification covering hooks, context, and modern React patterns for building scalable applications.')">
+            <div class="cert" onclick="openCertificate('assets/images/certifications/A3.jpg', 'Grade 10. Ten days, barely any sleep. Worth every moment.', 'Finally got to camp overnight with my best friend—something our families never allowed. Intense days as patrol leader: finishing tasks fast, helping everyone, running on adrenaline. Ezhilmathi ma\'am looked after us like her own; she\'d even feed me when I forgot to eat. After one staff member got hurt and we helped, I felt shaken during the break. Started picking up litter—just to do something useful. Four friends joined, and we cleaned the whole ground. Next morning, they praised us in assembly. That small moment taught me: when things feel off, just do good. You notice yourself choosing right, and that builds quiet trust in your own heart. Came home exhausted and changed. Would relive those ten days in a heartbeat.')">
               <img src="assets/images/certifications/A3.jpg" alt="Certification 3">
             </div>
-            <div class="cert" onclick="openCertificate('assets/images/certifications/A4.jpg', 'Full Stack Development', 'Comprehensive full-stack development certification covering both frontend and backend technologies.')">
+            <div class="cert" onclick="openCertificate('assets/images/certifications/A4.jpg', 'Grade 10. Fourth year in a row.', 'Every year since 7th grade, I\'d walk into that aptitude test with barely any prep—just pure excitement. Logic puzzles and patterns were my happy place; I\'d get so absorbed that hours flew by. Clearing it again for the fourth time felt amazing, not because of the certificate, but because it reminded me how much I genuinely love problem-solving. Math wasn\'t a chore—it was where I felt most alive. My parents were so proud, and I was too. Grateful for finding something that just clicks.')">
               <img src="assets/images/certifications/A4.jpg" alt="Certification 4">
             </div>
-            <div class="cert" onclick="openCertificate('assets/images/certifications/A5.jpg', 'JavaScript ES6+', 'Modern JavaScript certification focusing on ES6+ features, async programming, and advanced concepts.')">
+            <div class="cert" onclick="openCertificate('assets/images/certifications/A5.jpg', 'Five days. 5-hour daily commute. Zero regrets.', 'I had the longest journey—2.5 hours each way—with three friends. Those train rides turned into laughter, snacks, and naps; exhausting but unforgettable. The workshop introduced me to ML, but the real magic was the bond we built. One final-year speaker was incredible—he explained tough concepts so simply that we all forgot our trains and stayed till the end. That\'s the kind of teacher I hope to be someday. Grateful for those tiring, joyful days.')">
               <img src="assets/images/certifications/A5.jpg" alt="Certification 5">
             </div>
-            <div class="cert" onclick="openCertificate('assets/images/certifications/A6.jpg', 'Web Accessibility', 'Web accessibility certification emphasizing inclusive design and WCAG 2.1 compliance standards.')">
+            <div class="cert" onclick="openCertificate('assets/images/certifications/A6.jpg', 'Quiet hours, real growth.', 'No drama here—just me, my laptop, and a bunch of realistic tasks on debugging, security, and development. I struggled at times, but pushing through alone built something valuable: discipline and real-world skills. Not every lesson comes from big events; some come from showing up when no one\'s watching. Grateful for the quiet wins that make you stronger.')">
               <img src="assets/images/certifications/A6.jpg" alt="Certification 6">
             </div>
-            <div class="cert" onclick="openCertificate('assets/images/certifications/A7.jpg', 'DevOps Fundamentals', 'DevOps certification covering CI/CD pipelines, containerization, and modern deployment practices.')">
+            <div class="cert" onclick="openCertificate('assets/images/certifications/A7.jpg', 'Short and practical.', 'Honestly, this one was more about building my resume than pure passion. Four tasks, a little help from a senior, and done. Not every experience has to be life-changing—some are just smart steps forward. It\'s okay to be strategic sometimes. Learned that progress can be quiet and practical, and that\'s perfectly fine.')">
               <img src="assets/images/certifications/A7.jpg" alt="Certification 7">
             </div>
-            <!-- Repeat for seamless scroll -->
-            <div class="cert" onclick="openCertificate('assets/images/certifications/A1.jpg', 'AWS Cloud Practitioner', 'Achieved AWS Cloud Practitioner certification in 2023. This certification validated my foundational knowledge of AWS services and cloud concepts.')">
+            <!-- duplicate set for seamless loop -->
+            <div class="cert" onclick="openCertificate('assets/images/certifications/A1.jpg', '1,289 plant species. One school campus. Countless bunked classes.', 'Our project: catalog every plant on our massive KV Air Force Station campus - Botanical names, benefits, even toxicities. A month of exploring the grounds (and yes, sneaking out of a few classes) got me close to my principal, Mrs Sundari Krishna Moorthi. We made it to regionals and nationals! That green campus taught me so much more than books ever could. Proud to be a KVian and still smile, thinking about those adventurous days.')">
               <img src="assets/images/certifications/A1.jpg" alt="Certification 1">
             </div>
-            <div class="cert" onclick="openCertificate('assets/images/certifications/A2.jpg', 'Google Cloud Associate', 'Completed Google Cloud Associate certification focusing on cloud architecture and deployment strategies.')">
+            <div class="cert" onclick="openCertificate('assets/images/certifications/A2.jpg', 'Grade 8. 20 days away from home. My first big failure.', 'I fell in love with Taekwondo in 2013—my coach called me a natural, and I hadn\'t lost a match. At Nationals in Ahmedabad, as the youngest, I became everyone\'s little sister. Training was brutal: bleeding, patching up and taking care of each other, pushing through total exhaustion. Unexpectedly, I lost in the third match. I held it together until I was home, then cried. Worst part? I quit afterwards. Years later, I realised quitting was the real mistake—resilience matters more than staying undefeated. I miss those 20 days, the team, and Taekwondo so much.')">
               <img src="assets/images/certifications/A2.jpg" alt="Certification 2">
             </div>
-            <div class="cert" onclick="openCertificate('assets/images/certifications/A3.jpg', 'React.js Developer', 'Advanced React.js certification covering hooks, context, and modern React patterns for building scalable applications.')">
+            <div class="cert" onclick="openCertificate('assets/images/certifications/A3.jpg', 'Grade 10. Ten days, barely any sleep. Worth every moment.', 'Finally got to camp overnight with my best friend—something our families never allowed. Intense days as patrol leader: finishing tasks fast, helping everyone, running on adrenaline. Ezhilmathi ma\'am looked after us like her own; she\'d even feed me when I forgot to eat. After one staff member got hurt and we helped, I felt shaken during the break. Started picking up litter—just to do something useful. Four friends joined, and we cleaned the whole ground. Next morning, they praised us in assembly. That small moment taught me: when things feel off, just do good. You notice yourself choosing right, and that builds quiet trust in your own heart. Came home exhausted and changed. Would relive those ten days in a heartbeat.')">
               <img src="assets/images/certifications/A3.jpg" alt="Certification 3">
             </div>
-            <div class="cert" onclick="openCertificate('assets/images/certifications/A4.jpg', 'Full Stack Development', 'Comprehensive full-stack development certification covering both frontend and backend technologies.')">
+            <div class="cert" onclick="openCertificate('assets/images/certifications/A4.jpg', 'Grade 10. Fourth year in a row.', 'Every year since 7th grade, I\'d walk into that aptitude test with barely any prep—just pure excitement. Logic puzzles and patterns were my happy place; I\'d get so absorbed that hours flew by. Clearing it again for the fourth time felt amazing, not because of the certificate, but because it reminded me how much I genuinely love problem-solving. Math wasn\'t a chore—it was where I felt most alive. My parents were so proud, and I was too. Grateful for finding something that just clicks.')">
               <img src="assets/images/certifications/A4.jpg" alt="Certification 4">
             </div>
-            <div class="cert" onclick="openCertificate('assets/images/certifications/A5.jpg', 'JavaScript ES6+', 'Modern JavaScript certification focusing on ES6+ features, async programming, and advanced concepts.')">
+            <div class="cert" onclick="openCertificate('assets/images/certifications/A5.jpg', 'Five days. 5-hour daily commute. Zero regrets.', 'I had the longest journey—2.5 hours each way—with three friends. Those train rides turned into laughter, snacks, and naps; exhausting but unforgettable. The workshop introduced me to ML, but the real magic was the bond we built. One final-year speaker was incredible—he explained tough concepts so simply that we all forgot our trains and stayed till the end. That\'s the kind of teacher I hope to be someday. Grateful for those tiring, joyful days.')">
               <img src="assets/images/certifications/A5.jpg" alt="Certification 5">
             </div>
-            <div class="cert" onclick="openCertificate('assets/images/certifications/A6.jpg', 'Web Accessibility', 'Web accessibility certification emphasizing inclusive design and WCAG 2.1 compliance standards.')">
+            <div class="cert" onclick="openCertificate('assets/images/certifications/A6.jpg', 'Quiet hours, real growth.', 'No drama here—just me, my laptop, and a bunch of realistic tasks on debugging, security, and development. I struggled at times, but pushing through alone built something valuable: discipline and real-world skills. Not every lesson comes from big events; some come from showing up when no one\'s watching. Grateful for the quiet wins that make you stronger.')">
               <img src="assets/images/certifications/A6.jpg" alt="Certification 6">
             </div>
-            <div class="cert" onclick="openCertificate('assets/images/certifications/A7.jpg', 'DevOps Fundamentals', 'DevOps certification covering CI/CD pipelines, containerization, and modern deployment practices.')">
+            <div class="cert" onclick="openCertificate('assets/images/certifications/A7.jpg', 'Short and practical.', 'Honestly, this one was more about building my resume than pure passion. Four tasks, a little help from a senior, and done. Not every experience has to be life-changing—some are just smart steps forward. It\'s okay to be strategic sometimes. Learned that progress can be quiet and practical, and that\'s perfectly fine.')">
               <img src="assets/images/certifications/A7.jpg" alt="Certification 7">
             </div>
-            <!-- Third complete set for perfect seamless loop -->
-            <div class="cert" onclick="openCertificate('assets/images/certifications/A1.jpg', 'AWS Cloud Practitioner', 'Achieved AWS Cloud Practitioner certification in 2023. This certification validated my foundational knowledge of AWS services and cloud concepts.')">
+            <div class="cert" onclick="openCertificate('assets/images/certifications/A1.jpg', '1,289 plant species. One school campus. Countless bunked classes.', 'Our project: catalog every plant on our massive KV Air Force Station campus - Botanical names, benefits, even toxicities. A month of exploring the grounds (and yes, sneaking out of a few classes) got me close to my principal, Mrs Sundari Krishna Moorthi. We made it to regionals and nationals! That green campus taught me so much more than books ever could. Proud to be a KVian and still smile, thinking about those adventurous days.')">
               <img src="assets/images/certifications/A1.jpg" alt="Certification 1">
             </div>
-            <div class="cert" onclick="openCertificate('assets/images/certifications/A2.jpg', 'Google Cloud Associate', 'Completed Google Cloud Associate certification focusing on cloud architecture and deployment strategies.')">
+            <div class="cert" onclick="openCertificate('assets/images/certifications/A2.jpg', 'Grade 8. 20 days away from home. My first big failure.', 'I fell in love with Taekwondo in 2013—my coach called me a natural, and I hadn\'t lost a match. At Nationals in Ahmedabad, as the youngest, I became everyone\'s little sister. Training was brutal: bleeding, patching up and taking care of each other, pushing through total exhaustion. Unexpectedly, I lost in the third match. I held it together until I was home, then cried. Worst part? I quit afterwards. Years later, I realised quitting was the real mistake—resilience matters more than staying undefeated. I miss those 20 days, the team, and Taekwondo so much.')">
               <img src="assets/images/certifications/A2.jpg" alt="Certification 2">
             </div>
-            <div class="cert" onclick="openCertificate('assets/images/certifications/A3.jpg', 'React.js Developer', 'Advanced React.js certification covering hooks, context, and modern React patterns for building scalable applications.')">
+            <div class="cert" onclick="openCertificate('assets/images/certifications/A3.jpg', 'Grade 10. Ten days, barely any sleep. Worth every moment.', 'Finally got to camp overnight with my best friend—something our families never allowed. Intense days as patrol leader: finishing tasks fast, helping everyone, running on adrenaline. Ezhilmathi ma\'am looked after us like her own; she\'d even feed me when I forgot to eat. After one staff member got hurt and we helped, I felt shaken during the break. Started picking up litter—just to do something useful. Four friends joined, and we cleaned the whole ground. Next morning, they praised us in assembly. That small moment taught me: when things feel off, just do good. You notice yourself choosing right, and that builds quiet trust in your own heart. Came home exhausted and changed. Would relive those ten days in a heartbeat.')">
               <img src="assets/images/certifications/A3.jpg" alt="Certification 3">
             </div>
-            <div class="cert" onclick="openCertificate('assets/images/certifications/A4.jpg', 'Full Stack Development', 'Comprehensive full-stack development certification covering both frontend and backend technologies.')">
+            <div class="cert" onclick="openCertificate('assets/images/certifications/A4.jpg', 'Grade 10. Fourth year in a row.', 'Every year since 7th grade, I\'d walk into that aptitude test with barely any prep—just pure excitement. Logic puzzles and patterns were my happy place; I\'d get so absorbed that hours flew by. Clearing it again for the fourth time felt amazing, not because of the certificate, but because it reminded me how much I genuinely love problem-solving. Math wasn\'t a chore—it was where I felt most alive. My parents were so proud, and I was too. Grateful for finding something that just clicks.')">
               <img src="assets/images/certifications/A4.jpg" alt="Certification 4">
             </div>
-            <div class="cert" onclick="openCertificate('assets/images/certifications/A5.jpg', 'JavaScript ES6+', 'Modern JavaScript certification focusing on ES6+ features, async programming, and advanced concepts.')">
+            <div class="cert" onclick="openCertificate('assets/images/certifications/A5.jpg', 'Five days. 5-hour daily commute. Zero regrets.', 'I had the longest journey—2.5 hours each way—with three friends. Those train rides turned into laughter, snacks, and naps; exhausting but unforgettable. The workshop introduced me to ML, but the real magic was the bond we built. One final-year speaker was incredible—he explained tough concepts so simply that we all forgot our trains and stayed till the end. That\'s the kind of teacher I hope to be someday. Grateful for those tiring, joyful days.')">
               <img src="assets/images/certifications/A5.jpg" alt="Certification 5">
             </div>
-            <div class="cert" onclick="openCertificate('assets/images/certifications/A6.jpg', 'Web Accessibility', 'Web accessibility certification emphasizing inclusive design and WCAG 2.1 compliance standards.')">
+            <div class="cert" onclick="openCertificate('assets/images/certifications/A6.jpg', 'Quiet hours, real growth.', 'No drama here—just me, my laptop, and a bunch of realistic tasks on debugging, security, and development. I struggled at times, but pushing through alone built something valuable: discipline and real-world skills. Not every lesson comes from big events; some come from showing up when no one\'s watching. Grateful for the quiet wins that make you stronger.')">
               <img src="assets/images/certifications/A6.jpg" alt="Certification 6">
             </div>
-            <div class="cert" onclick="openCertificate('assets/images/certifications/A7.jpg', 'DevOps Fundamentals', 'DevOps certification covering CI/CD pipelines, containerization, and modern deployment practices.')">
+            <div class="cert" onclick="openCertificate('assets/images/certifications/A7.jpg', 'Short and practical.', 'Honestly, this one was more about building my resume than pure passion. Four tasks, a little help from a senior, and done. Not every experience has to be life-changing—some are just smart steps forward. It\'s okay to be strategic sometimes. Learned that progress can be quiet and practical, and that\'s perfectly fine.')">
               <img src="assets/images/certifications/A7.jpg" alt="Certification 7">
             </div>
           </div>
@@ -173,83 +156,73 @@
         <div class="skills-section">
           <h2 class="skills-heading">Skills</h2>
           <div class="skills-marquee">
-            <!-- Row 1: Left to Right -->
             <div class="skills-row left-to-right">
               <div class="skills-track">
-                <div class="skill-item"><i class="devicon-java-plain"></i><span>JAVA</span></div>
-                <div class="skill-item"><i class="devicon-html5-plain"></i><span>HTML</span></div>
-                <div class="skill-item"><i class="devicon-css3-plain"></i><span>CSS</span></div>
-                <div class="skill-item"><i class="devicon-javascript-plain"></i><span>JAVASCRIPT</span></div>
-                <div class="skill-item"><i class="devicon-react-original"></i><span>REACT JS</span></div>
-                <div class="skill-item"><i class="devicon-spring-plain"></i><span>SPRINGBOOT</span></div>
-                <div class="skill-item"><i class="devicon-mysql-plain"></i><span>SQL</span></div>
-                <div class="skill-item"><i class="fas fa-code"></i><span>REST API</span></div>
-                <div class="skill-item"><i class="devicon-postman-plain"></i><span>POSTMAN</span></div>
-                <div class="skill-item"><i class="devicon-amazonwebservices-original"></i><span>CLOUD TECHNOLOGIES</span></div>
+                <div class="skill-item"><i class="devicon-java-plain"></i><span>Java</span></div>
+                <div class="skill-item"><i class="devicon-html5-plain"></i><span>HTML5</span></div>
+                <div class="skill-item"><i class="devicon-css3-plain"></i><span>CSS3</span></div>
+                <div class="skill-item"><i class="devicon-javascript-plain"></i><span>JavaScript</span></div>
+                <div class="skill-item"><i class="devicon-react-original"></i><span>React.js</span></div>
+                <div class="skill-item"><i class="devicon-mysql-plain"></i><span>MySQL</span></div>
+                <div class="skill-item"><i class="devicon-spring-plain"></i><span>Spring Boot</span></div>
+                <div class="skill-item"><i class="devicon-maven-plain"></i><span>Maven</span></div>
+                <div class="skill-item"><span>Data Structures</span></div>
                 <!-- Duplicated for seamless loop -->
-                <div class="skill-item"><i class="devicon-java-plain"></i><span>JAVA</span></div>
-                <div class="skill-item"><i class="devicon-html5-plain"></i><span>HTML</span></div>
-                <div class="skill-item"><i class="devicon-css3-plain"></i><span>CSS</span></div>
-                <div class="skill-item"><i class="devicon-javascript-plain"></i><span>JAVASCRIPT</span></div>
-                <div class="skill-item"><i class="devicon-react-original"></i><span>REACT JS</span></div>
-                <div class="skill-item"><i class="devicon-spring-plain"></i><span>SPRINGBOOT</span></div>
-                <div class="skill-item"><i class="devicon-mysql-plain"></i><span>SQL</span></div>
-                <div class="skill-item"><i class="devicon-postman-plain"></i><span>POSTMAN</span></div>
-                <div class="skill-item"><i class="devicon-amazonwebservices-original"></i><span>CLOUD TECHNOLOGIES</span></div>
+                <div class="skill-item"><i class="devicon-java-plain"></i><span>Java</span></div>
+                <div class="skill-item"><i class="devicon-html5-plain"></i><span>HTML5</span></div>
+                <div class="skill-item"><i class="devicon-css3-plain"></i><span>CSS3</span></div>
+                <div class="skill-item"><i class="devicon-javascript-plain"></i><span>JavaScript</span></div>
+                <div class="skill-item"><i class="devicon-react-original"></i><span>React.js</span></div>
+                <div class="skill-item"><i class="devicon-mysql-plain"></i><span>MySQL</span></div>
+                <div class="skill-item"><i class="devicon-spring-plain"></i><span>Spring Boot</span></div>
+                <div class="skill-item"><i class="devicon-maven-plain"></i><span>Maven</span></div>
+                <div class="skill-item"><span>Data Structures</span></div>
               </div>
             </div>
             
             <!-- Row 2: Right to Left -->
             <div class="skills-row right-to-left">
               <div class="skills-track">
-                <div class="skill-item"><i class="devicon-spring-plain"></i><span>SPRINGBOOT</span></div>
-                <div class="skill-item"><i class="devicon-mysql-plain"></i><span>SQL</span></div>
+                <div class="skill-item"><span>SDLC</span></div>
+                <div class="skill-item"><i class="devicon-materialui-plain"></i><span>MUI</span></div>
+                <div class="skill-item"><span>OAuth 2.0</span></div>
                 <div class="skill-item"><i class="fas fa-code"></i><span>REST API</span></div>
-                <div class="skill-item"><i class="devicon-postman-plain"></i><span>POSTMAN</span></div>
-                <div class="skill-item"><i class="devicon-amazonwebservices-original"></i><span>CLOUD TECHNOLOGIES</span></div>
-                <div class="skill-item"><i class="devicon-java-plain"></i><span>JAVA</span></div>
-                <div class="skill-item"><i class="devicon-html5-plain"></i><span>HTML</span></div>
-                <div class="skill-item"><i class="devicon-css3-plain"></i><span>CSS</span></div>
-                <div class="skill-item"><i class="devicon-javascript-plain"></i><span>JAVASCRIPT</span></div>
-                <div class="skill-item"><i class="devicon-react-original"></i><span>REACT JS</span></div>
+                <div class="skill-item"><span>JWT</span></div>
+                <div class="skill-item"><span>Mailtrap</span></div>
+                <div class="skill-item"><span>Gmail Integration</span></div>
+                <div class="skill-item"><span>JavaMailSender</span></div>
+                <div class="skill-item"><i class="devicon-postman-plain"></i><span>Postman</span></div>
                 <!-- Duplicated for seamless loop -->
-                <div class="skill-item"><i class="devicon-spring-plain"></i><span>SPRINGBOOT</span></div>
-                <div class="skill-item"><i class="devicon-mysql-plain"></i><span>SQL</span></div>
+                <div class="skill-item"><span>SDLC</span></div>
+                <div class="skill-item"><i class="devicon-materialui-plain"></i><span>MUI</span></div>
+                <div class="skill-item"><span>OAuth 2.0</span></div>
                 <div class="skill-item"><i class="fas fa-code"></i><span>REST API</span></div>
-                <div class="skill-item"><i class="devicon-postman-plain"></i><span>POSTMAN</span></div>
-                <div class="skill-item"><i class="devicon-amazonwebservices-original"></i><span>CLOUD TECHNOLOGIES</span></div>
-                <div class="skill-item"><i class="devicon-java-plain"></i><span>JAVA</span></div>
-                <div class="skill-item"><i class="devicon-html5-plain"></i><span>HTML</span></div>
-                <div class="skill-item"><i class="devicon-css3-plain"></i><span>CSS</span></div>
-                <div class="skill-item"><i class="devicon-javascript-plain"></i><span>JAVASCRIPT</span></div>
-                <div class="skill-item"><i class="devicon-react-original"></i><span>REACT JS</span></div>
+                <div class="skill-item"><span>JWT</span></div>
+                <div class="skill-item"><span>Mailtrap</span></div>
+                <div class="skill-item"><span>Gmail Integration</span></div>
+                <div class="skill-item"><span>JavaMailSender</span></div>
+                <div class="skill-item"><i class="devicon-postman-plain"></i><span>Postman</span></div>
               </div>
             </div>
             
             <!-- Row 3: Left to Right -->
             <div class="skills-row left-to-right">
               <div class="skills-track">
-                <div class="skill-item"><i class="devicon-css3-plain"></i><span>CSS</span></div>
-                <div class="skill-item"><i class="devicon-react-original"></i><span>REACT JS</span></div>
-                <div class="skill-item"><i class="devicon-java-plain"></i><span>JAVA</span></div>
-                <div class="skill-item"><i class="devicon-amazonwebservices-original"></i><span>CLOUD TECHNOLOGIES</span></div>
-                <div class="skill-item"><i class="devicon-html5-plain"></i><span>HTML</span></div>
-                <div class="skill-item"><i class="devicon-postman-plain"></i><span>POSTMAN</span></div>
-                <div class="skill-item"><i class="devicon-javascript-plain"></i><span>JAVASCRIPT</span></div>
-                <div class="skill-item"><i class="devicon-spring-plain"></i><span>SPRINGBOOT</span></div>
-                <div class="skill-item"><i class="devicon-mysql-plain"></i><span>SQL</span></div>
-                <div class="skill-item"><i class="fas fa-code"></i><span>REST API</span></div>
+                <div class="skill-item"><i class="devicon-git-plain"></i><span>Git</span></div>
+                <div class="skill-item"><i class="devicon-github-original"></i><span>GitHub</span></div>
+                <div class="skill-item"><i class="devicon-vercel-original"></i><span>Vercel</span></div>
+                <div class="skill-item"><i class="devicon-digitalocean-plain"></i><span>DigitalOcean</span></div>
+                <div class="skill-item"><i class="devicon-oracle-original"></i><span>Oracle Cloud Infrastructure</span></div>
+                <div class="skill-item"><i class="devicon-figma-plain"></i><span>Figma</span></div>
+                <div class="skill-item"><i class="devicon-canva-original"></i><span>Canva</span></div>
                 <!-- Duplicated for seamless loop -->
-                <div class="skill-item"><i class="devicon-css3-plain"></i><span>CSS</span></div>
-                <div class="skill-item"><i class="devicon-react-original"></i><span>REACT JS</span></div>
-                <div class="skill-item"><i class="devicon-java-plain"></i><span>JAVA</span></div>
-                <div class="skill-item"><i class="devicon-amazonwebservices-original"></i><span>CLOUD TECHNOLOGIES</span></div>
-                <div class="skill-item"><i class="devicon-html5-plain"></i><span>HTML</span></div>
-                <div class="skill-item"><i class="devicon-postman-plain"></i><span>POSTMAN</span></div>
-                <div class="skill-item"><i class="devicon-javascript-plain"></i><span>JAVASCRIPT</span></div>
-                <div class="skill-item"><i class="devicon-spring-plain"></i><span>SPRINGBOOT</span></div>
-                <div class="skill-item"><i class="devicon-mysql-plain"></i><span>SQL</span></div>
-                <div class="skill-item"><i class="fas fa-code"></i><span>REST API</span></div>
+                <div class="skill-item"><i class="devicon-git-plain"></i><span>Git</span></div>
+                <div class="skill-item"><i class="devicon-github-original"></i><span>GitHub</span></div>
+                <div class="skill-item"><i class="devicon-vercel-original"></i><span>Vercel</span></div>
+                <div class="skill-item"><i class="devicon-digitalocean-plain"></i><span>DigitalOcean</span></div>
+                <div class="skill-item"><i class="devicon-oracle-original"></i><span>Oracle Cloud Infrastructure</span></div>
+                <div class="skill-item"><i class="devicon-figma-plain"></i><span>Figma</span></div>
+                <div class="skill-item"><i class="devicon-canva-original"></i><span>Canva</span></div>
               </div>
             </div>
             
